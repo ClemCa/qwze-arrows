@@ -9,15 +9,43 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["onLanguage"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "qwze-arrows.helloWorld",
-        "title": "Hello World"
+        "command": "qwze-arrows.toggle",
+        "title": "Toggle qwze arrow insertion"
       }
-    ]
+    ],
+    "keybindings": [
+      {
+        "command": "qwze-arrows.toggle",
+        "key": "alt+w",
+        "mac": "cmd+w",
+        "when": "editorTextFocus"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorTextFocus",
+          "command": "qwze-arrows.toggle",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "qwze-arrows",
+      "properties": {
+        "qwze-arrows.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether qwze arrows insertion is enabled"
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
