@@ -3,10 +3,11 @@
   "displayName": "qwze arrows",
   "description": "Using a qwerty keyboard with an azerty layout and can't for the love of god figure out how to type arrows? You're welcome.",
   "publisher": "ClemCa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.87.0"
   },
+  "icon": "icon.png",
   "categories": [
     "Other"
   ],
@@ -58,6 +59,10 @@
         }
       }
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ClemCa/qwze-arrows"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
