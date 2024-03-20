@@ -20,10 +20,14 @@ export function activate(context: vscode.ExtensionContext) {
 function arrowDetection(change: vscode.TextDocumentChangeEvent) {
 	if(change.reason !== undefined) return;
 	if(!vscode.workspace.getConfiguration('qwze-arrows').get('enabled')) return;
+	const wOnly = vscode.workspace.getConfiguration('qwze-arrows').get('wOnly');
 	function Check(text: string) {
 		if(text.length < 2) return;
 		if(text[text.length-1] === 'w' && text[text.length-2] === 'w') arrowInsertion('<');
-		if(text[text.length-1] === 'x' && text[text.length-2] === 'x') arrowInsertion('>');
+		if(wOnly){
+			if(text[text.length-1] === 'W' && text[text.length-2] === 'W') arrowInsertion('>');
+		}
+		else if(text[text.length-1] === 'x' && text[text.length-2] === 'x') arrowInsertion('>');
 	}
 	if(change.contentChanges.length === 0) return;
 	const editor = vscode.window.activeTextEditor;

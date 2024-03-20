@@ -43,6 +43,11 @@
           "type": "boolean",
           "default": true,
           "description": "Whether qwze arrows insertion is enabled"
+        },
+        "qwze-arrows.wOnly": {
+          "type": "boolean",
+          "default": false,
+          "description": "Use shift+w to insert a right arrow"
         }
       }
     }
