@@ -24,6 +24,12 @@
         "key": "alt+w",
         "mac": "cmd+w",
         "when": "editorTextFocus"
+      },
+      {
+        "command": "qwze-arrows.wOnlyToggle",
+        "key": "alt+x",
+        "mac": "cmd+x",
+        "when": "editorTextFocus"
       }
     ],
     "menus": {

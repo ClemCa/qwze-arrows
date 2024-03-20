@@ -12,7 +12,17 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Arrows insertion enabled!');
 	});
 
-	context.subscriptions.push(toggleCommand);
+	let wOnlyToggle = vscode.commands.registerCommand('qwze-arrows.wOnlyToggle', () => {
+		if(vscode.workspace.getConfiguration('qwze-arrows').get('wOnly')) {
+			vscode.workspace.getConfiguration('qwze-arrows').update('wOnly', false, true);
+			vscode.window.showInformationMessage('W-only mode disabled!');
+			return;
+		}
+		vscode.workspace.getConfiguration('qwze-arrows').update('wOnly', true, true);
+		vscode.window.showInformationMessage('W-only mode enabled!');
+	});
+
+	context.subscriptions.push(toggleCommand, wOnlyToggle);
 
 	vscode.workspace.onDidChangeTextDocument(arrowDetection);
 }
