@@ -2,6 +2,7 @@
   "name": "qwze-arrows",
   "displayName": "qwze arrows",
   "description": "Using a qwerty keyboard with an azerty layout and can't for the love of god figure out how to type arrows? You're welcome.",
+  "publisher": "ClemCa",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.87.0"
