@@ -1,71 +1,34 @@
 # qwze-arrows README
 
-This is the README for your extension "qwze-arrows". After writing up a brief description, we recommend including the following sections.
+Have a keyboard you really like, but you're too used to AZERTY to switch to QWERTY?
+This extension is for you!
+It fixes the biggest issue with this setup: there is one less key on your keyboard.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+'w' (or 'z' in qwerty) is the closest key to the azerty '<' & '>' key, apart from the shift key which expands above it.
+It is also seldom repeated in programming or writing, and is hence the perfect key to use for our purpose.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **Intuitive Arrow Typing**: Type 'ww' for a left arrow (<) and 'xx' for a right arrow (>), which will automatically convert to arrow symbols.
+- **Easy Toggling**: Easily enable or disable arrow insertion with alt+w
+- **W-only Mode**: You can also get even closer to the full AZERTY experience by using 'w' for both left and right arrows. This can be toggled with alt+x.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension contributes to the following settings:
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `qwze-arrows.enabled`: Enable or disable arrow insertion. Enabled by default.
+- `qwze-arrows.wOnly`: Use 'w' for both left and right arrows. Disabled by default.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+No known issues at this time. For any bugs or feature requests, please open an issue on the GitHub repository.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- Initial release of "qwze arrows".
+- Toggle arrow insertion with a shortcut.
+- Automatic insertion of left and right arrows using 'ww' and 'xx'.
+- Option to use 'w' for both left and right arrows.
