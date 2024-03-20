@@ -1,4 +1,5 @@
 import * as assert from 'assert';
+import { suite } from 'mocha'; // Import the 'suite' function from the 'mocha' module
 
 // You can import and use all API from the 'vscode' module
 // as well as import your extension to test it
