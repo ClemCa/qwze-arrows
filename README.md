@@ -1,4 +1,4 @@
-# qwze arrows README
+# QWZE arrows
 
 Have a keyboard you really like, but you're too used to AZERTY to switch to QWERTY?
 This extension is for you!
