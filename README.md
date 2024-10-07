@@ -23,12 +23,3 @@ This extension contributes to the following settings:
 ## Known Issues
 
 No known issues at this time. For any bugs or feature requests, please open an issue on the GitHub repository.
-
-## Release Notes
-
-### 0.0.1
-
-- Initial release of "qwze arrows".
-- Toggle arrow insertion with a shortcut.
-- Automatic insertion of left and right arrows using 'ww' and 'xx'.
-- Option to use 'w' for both left and right arrows.
